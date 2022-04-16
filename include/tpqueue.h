@@ -14,7 +14,7 @@ class TPQueue {
       return arr[(first++)%size];
     }
     void push(T value) {
-      int tmp = last;
+      int tmp = last++;
       bool count = false;
       while (!count) {
         if ((first < --tmp) && (value.prior > arr[last%size].prior)) {
@@ -23,7 +23,6 @@ class TPQueue {
             count = true;
           }
         arr[(tmp+1)%size] = value;
-        last++;
       }
     }
   // реализация шаблона очереди с приоритетом на кольцевом буфере
