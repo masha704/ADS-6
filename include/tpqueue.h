@@ -22,8 +22,8 @@ class TPQueue {
         } else {
             count = true;
           }
-        arr[(tmp+1)%size] = value;
       }
+      arr[(tmp+1)%size] = value;
     }
   // реализация шаблона очереди с приоритетом на кольцевом буфере
 };
