@@ -5,10 +5,11 @@
 template<typename T, int size>
 class TPQueue {
  private:
-    int first, last;
+    int first;
+    int last;
     T arr[size];
  public:
-    TPQueue: first(0), last(0) { }
+    TPQueue() : first(0), last(0) { }
     T pop() {
       return arr[(first++)%size];
     }
