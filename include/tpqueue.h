@@ -7,7 +7,7 @@ class TPQueue {
  private:
     int first;
     int last;
-    T arr[size];
+    T arr[10];
  public:
     TPQueue() : first(0), last(0) { }
     T pop() {
